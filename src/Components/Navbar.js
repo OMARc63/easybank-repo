@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import { useState } from "react";
 import "./Navbar.css";
 import logo from "../images/logo.svg";
 import Button from "./Button";
@@ -9,6 +9,7 @@ export default function Navbar () {
 
   return (
     <div className="Navbar">
+
       <div className="container">
         <div className="logo">
           <img src={logo} />
@@ -29,6 +30,7 @@ export default function Navbar () {
         </div>
         <div className="bg-white"></div>
       </div>
+
     </div>
   )
 }
