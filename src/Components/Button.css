@@ -1,0 +1,14 @@
+.invite {
+  background: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
+  color: var(--white);
+  margin: 20px 0;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: .3s;
+  font-size: 18px;
+}
+.invite:hover {
+  opacity: .5;
+}
