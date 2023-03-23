@@ -10,6 +10,7 @@
 .ArticlesSection .articles {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .ArticlesSection .articles .article {
   width: 23%;
@@ -35,7 +36,7 @@
 .ArticlesSection .article .info .info-title {
   margin: 10px 0;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 .ArticlesSection .article .info .info-title:hover {
   color: var(--lime-green);
@@ -44,6 +45,14 @@
   font-size: 14px;
   margin: 0rem;
 }
+
+@media (max-width: 992px) {
+  .ArticlesSection .articles .article {
+    flex-basis: 250px;
+    max-width: 260px;
+  }
+}
+
 @media (max-width: 375px) {
   .ArticlesSection .title {
     text-align: center;

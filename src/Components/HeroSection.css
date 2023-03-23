@@ -2,7 +2,7 @@
   background-color: var(--very-light-gray);
 }
 .HeroSection .container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
 }
 .HeroSection .info {
@@ -62,7 +62,14 @@
   background-size: cover;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 992px) {
+  .HeroSection .info,
+  .HeroSection .image {
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
   .HeroSection {
     height: 100%;
     padding: 70px 0;
@@ -86,7 +93,7 @@
     width: 100%;
   }
   .HeroSection .image .desktop {
-    display: none;
+    top: -60px;
   }
   .HeroSection .image .mockup {
     position: relative;
@@ -99,7 +106,18 @@
   .HeroSection .image .mockup img {
     width: 100%;
   }
+}
+
+@media (max-width: 375px) {
+  .HeroSection {
+    padding-top: 0;
+  }
+  .HeroSection .image .desktop {
+    display: none;
+  }
+
   .HeroSection .image .mobile {
+    top: 0;
     display: block;
   }
 }

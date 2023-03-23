@@ -15,10 +15,16 @@
 .WhySection .features {
   display: flex;
   justify-content: space-between;
-  margin-top: 60px;
+  flex-wrap: wrap;
 }
 .WhySection .features .feat {
   width: 23%;
+  flex: 1 0 260px;
+  max-width: 280px;
+  margin-top: 3rem;
+}
+.WhySection .features .feat:not(:last-child) {
+  margin-right: 2rem;
 }
 .WhySection .feat .feat-title {
   font-size: 26px;
@@ -27,6 +33,15 @@
 .WhySection .feat .feat-desc {
   color: var(--grayish-blue);
   line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .WhySection .features {
+    justify-content: center;
+  }
+  .WhySection .features .feat {
+    text-align: center;
+  }
 }
 
 @media (max-width: 375px) {

@@ -6,9 +6,10 @@
   border: none;
   border-radius: 40px;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
   font-size: 18px;
+  min-width: max-content;
 }
 .invite:hover {
-  opacity: .5;
+  opacity: 0.5;
 }

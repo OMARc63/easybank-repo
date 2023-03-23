@@ -6,6 +6,7 @@
 .Footer .container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .Footer .logo {
   display: flex;
@@ -27,12 +28,13 @@
   cursor: pointer;
 }
 .Footer .logo .social svg path {
-  transition: .3s;
+  transition: 0.3s;
 }
 .Footer .logo .social svg:hover path {
   fill: var(--lime-green);
 }
 .Footer .links {
+  flex: 1;
   color: var(--white);
   font-weight: 300;
   flex-grow: 1;
@@ -45,7 +47,7 @@
 }
 .Footer .links li {
   margin: 10px 10%;
-  transition: .3s;
+  transition: 0.3s;
   cursor: pointer;
 }
 .Footer .links li:hover {
@@ -61,7 +63,18 @@
   background: linear-gradient(to right, hsl(136, 41%, 73%), hsl(192, 41%, 70%));
   opacity: 1;
 }
-@media (max-width: 375px) {
+
+@media (max-width: 992px) {
+  .Footer .links {
+    align-content: flex-end;
+  }
+  .Footer .invite-rights {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
   .Footer {
     text-align: center;
     padding: 50px 0;
